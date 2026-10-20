@@ -1,19 +1,44 @@
-## 🌐 Dashboard online
-
-[🚀 Acessar Atlas Credit — Dashboard Interativo](https://c8lka6o86egxm5woxtgm8j.streamlit.app/)
-
-Projeto educacional de análise de crédito e performance
-financeira desenvolvido com Python, SQL, SQLite e Streamlit.
-
-Todos os dados utilizados são fictícios.
-
 # Análise de Crédito e Performance Financeira
 
-**Projeto de portfólio | Python • SQL • SQLite • Streamlit (dashboard interativo) • Power BI (roteiro)**
+**Atlas Credit Lab — projeto de portfólio em Análise de Dados**
 
-Projeto educacional de analytics para simular a operação de crédito de uma rede de imobiliárias parceiras. Foi inspirado nos **tipos de indicadores** solicitados em vagas de dados do setor de crédito, incluindo a vaga de Analista de Dados Júnior da CashGO, mas **não é um projeto oficial da empresa** e **não usa dados reais**.
+### [🚀 Acessar o dashboard interativo](https://c8lka6o86egxm5woxtgm8j.streamlit.app/)
 
-> **Importante:** todos os registros são **100% fictícios e gerados por simulação**, com semente fixa, para uso didático. O roteiro de Power BI foi preparado, mas um dashboard `.pbix` ainda precisa ser construído no Power BI Desktop.
+[Explorar código-fonte](https://github.com/KleberJFIlho/analise-credito-performance-financeira) · [Dicionário de dados](docs/DICIONARIO_DE_DADOS.md) · [Guia do dashboard](docs/DASHBOARD_STREAMLIT.md)
+
+Projeto educacional *end-to-end* que simula uma operação de crédito com imobiliárias parceiras. O objetivo é transformar dados relacionais em indicadores de negócio que apoiem a análise do funil de crédito, do risco de inadimplência e da eficiência operacional.
+
+> **Transparência:** todos os dados, clientes, imobiliárias e resultados são **100% fictícios**, gerados para fins didáticos. Este projeto é independente, **não é oficial da CashGO** e não utiliza informações reais da empresa ou de instituições financeiras.
+
+## Tecnologias e competências demonstradas
+
+| Tecnologia | Aplicação prática |
+| --- | --- |
+| **Python** | Geração de dados sintéticos, processamento, validação e cálculos |
+| **SQL** | JOINs, agregações, CTEs e consultas analíticas por parceiro, mês e risco |
+| **SQLite** | Modelagem de cinco tabelas relacionais, chaves, integridade e índices |
+| **Pandas** | Preparação de dados e cálculos com filtros |
+| **Streamlit + Plotly** | Dashboard web com métricas, gráficos interativos, filtros e exportação CSV |
+| **Matplotlib** | Gráficos estáticos para documentação e apresentação |
+| **unittest + GitHub** | Testes de consistência, código versionado e projeto reproduzível |
+| **Power BI** | **Roteiro de estudos e medidas DAX em documentação; painel .pbix ainda não desenvolvido** |
+
+## Indicadores financeiros e interpretação
+
+Exemplo de resultados da base simulada, **sem filtros**, com posição de inadimplência em **01/10/2026**:
+
+| Indicador | Resultado simulado | Como interpretar |
+| --- | ---: | --- |
+| **Solicitações** | **2.400** | Total de pedidos de crédito recebidos |
+| **Aprovação** | **60,25%** | Pedidos aprovados (inclusive os liberados) ÷ total de solicitações |
+| **Créditos liberados** | **1.213** | Solicitações que geraram um contrato com crédito desembolsado |
+| **Conversão** | **50,54%** | Créditos liberados ÷ solicitações |
+| **Tempo médio de decisão** | **24,14 h** | Média de horas para análise e decisão do pedido |
+| **Custo operacional médio** | **R$ 49,96** | Custo fictício médio por solicitação |
+
+O painel também acompanha **inadimplência 30+** (contratos com ao menos uma parcela não paga há 30 dias ou mais, divididos pelos contratos liberados), **valor vencido 30+**, volume financeiro liberado, faixas de risco e comparativos por imobiliária parceira.
+
+**Nota analítica:** a inadimplência é calculada em uma **data de referência fixa**, mesmo quando se filtram meses de solicitação; portanto, não é uma série histórica de inadimplência nem equivale à exposição total em risco. O volume mensal representa a **coorte de solicitação**, não o fluxo de caixa mensal.
 
 ## Perguntas de negócio
 
@@ -24,9 +49,9 @@ Projeto educacional de analytics para simular a operação de crédito de uma re
 5. Qual o tempo médio da decisão e o custo operacional por solicitação?
 6. Como a revisão manual altera o SLA e o custo médio?
 
-## Dashboard interativo (NOVO)
+## Dashboard interativo
 
-A versão atual já inclui um **dashboard funcional em Streamlit**. O painel abre no navegador, com filtros por mês, UF, parceiro, faixa de risco e status; gráficos de volume, funil, conversão, inadimplência e eficiência; tabelas e exportação CSV.
+O repositório inclui um **dashboard em Streamlit publicado online**, acessível pelo [link do painel](https://c8lka6o86egxm5woxtgm8j.streamlit.app/). O painel abre no navegador, com filtros por mês, UF, parceiro, faixa de risco e status; gráficos de volume, funil, conversão, inadimplência e eficiência; tabelas e exportação CSV.
 
 **Windows: entre na pasta e dê dois cliques em `INICIAR_DASHBOARD.bat`.** Na primeira execução é necessária conexão à internet para instalar bibliotecas que ainda não estejam presentes. Mantenha o terminal aberto para o servidor continuar funcionando.
 
@@ -162,23 +187,19 @@ Documentação: [dicionário e regras](docs/DICIONARIO_DE_DADOS.md) · [guia Pow
 
 - Construir o **Power BI Desktop real** e adicionar o `.pbix` e screenshots ao repositório.
 - Elaborar análises mensais históricas de inadimplência usando múltiplas datas de corte.
-- Publicar o **dashboard Streamlit existente** online (deploy) com os dados 100% fictícios.
+- Adicionar testes de implantação e monitorar a disponibilidade da versão publicada no Streamlit Community Cloud.
 - Implementar CI no GitHub Actions para executar os testes a cada `push`.
 
-## Publicar no GitHub
+## Para recrutadores — o que este projeto demonstra
 
-Crie um repositório público chamado `analise-credito-performance-financeira`. Extraia este projeto, abra o terminal na pasta e execute:
+- **Tradução de perguntas de negócio em métricas:** aprovação, conversão, volume financeiro, inadimplência e SLA.
+- **Conhecimento de SQL e bancos relacionais:** modelagem, integridade e consultas com agrupamentos e relacionamentos.
+- **Capacidade de apresentar insights:** filtros, gráficos, tabelas e exportação de resultados pelo navegador.
+- **Qualidade e comunicação:** testes automatizados, documentação das fórmulas e explicitação das limitações da simulação.
 
-```bash
-git init
-git add .
-git commit -m "Projeto de portfolio: analise de credito com SQL e Python"
-git branch -M main
-git remote add origin https://github.com/SEU_USUARIO/analise-credito-performance-financeira.git
-git push -u origin main
-```
+**Descrição sugerida para o currículo:** Projeto educacional de análise de crédito com Python, SQL, SQLite e Streamlit; modelagem de dados, consultas analíticas e dashboard interativo para acompanhamento de conversão, risco 30+, SLA e performance de parceiros. [Acessar painel](https://c8lka6o86egxm5woxtgm8j.streamlit.app/).
 
-Crie primeiro o repositório **vazio** na interface do GitHub, sem README inicial, e substitua `SEU_USUARIO` pelo seu usuário. A publicação no GitHub é uma etapa manual, não realizada automaticamente neste pacote.
+**Importante:** o projeto demonstra competências praticadas, mas **não representa experiência profissional com dados financeiros reais**. Não declare domínio de Power BI antes de construir e conseguir explicar um dashboard nessa ferramenta.
 
 ---
 
