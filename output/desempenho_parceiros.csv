@@ -1,0 +1,26 @@
+﻿parceiro_id,nome_parceiro,uf,porte,solicitacoes,aprovadas,desembolsadas,conversao_pct,valor_liberado,contratos_inadimplentes_30d,inadimplencia_30d_pct,valor_vencido_30d,sla_medio_horas,custo_medio_operacao
+PAR010,Imobiliária Fictícia 10,MG,Pequeno,103,69,58,56.31,2554807.21,5,8.62,133001.23,22.37,48.16
+PAR012,Imobiliária Fictícia 12,GO,Pequeno,107,61,53,49.53,2413737.2,6,11.32,91378.54,25.72,51.86
+PAR007,Imobiliária Fictícia 07,BA,Pequeno,99,64,57,57.58,2376060.13,6,10.53,128902.87,24.77,50.84
+PAR022,Imobiliária Fictícia 22,PE,Médio,107,67,57,53.27,2328013.82,4,7.02,73536.88,27.22,53.06
+PAR002,Imobiliária Fictícia 02,SC,Pequeno,91,62,50,54.95,2215754.69,8,16.0,173239.5,24.0,50.25
+PAR016,Imobiliária Fictícia 16,SP,Grande,99,67,62,62.63,2164184.17,13,20.97,221226.56,28.14,55.82
+PAR023,Imobiliária Fictícia 23,RJ,Pequeno,101,63,54,53.47,2143230.79,4,7.41,130121.5,23.17,48.01
+PAR006,Imobiliária Fictícia 06,PR,Pequeno,93,61,52,55.91,2111880.39,4,7.69,53582.35,23.89,50.64
+PAR004,Imobiliária Fictícia 04,RS,Pequeno,101,61,52,51.49,2044135.43,8,15.38,104437.58,23.67,48.82
+PAR008,Imobiliária Fictícia 08,PR,Médio,98,61,56,57.14,2042969.38,5,8.93,168971.5,22.5,47.69
+PAR018,Imobiliária Fictícia 18,PE,Médio,105,59,51,48.57,1964615.53,8,15.69,122447.77,23.96,49.38
+PAR014,Imobiliária Fictícia 14,PR,Médio,104,67,56,53.85,1932851.67,6,10.71,128566.66,24.26,51.56
+PAR015,Imobiliária Fictícia 15,RS,Grande,84,52,46,54.76,1924712.77,5,10.87,100075.42,25.76,53.27
+PAR024,Imobiliária Fictícia 24,MG,Pequeno,97,57,43,44.33,1891515.19,3,6.98,76182.86,23.29,47.99
+PAR005,Imobiliária Fictícia 05,MG,Pequeno,104,58,44,42.31,1815129.39,4,9.09,64420.12,26.3,52.04
+PAR020,Imobiliária Fictícia 20,RS,Pequeno,97,53,44,45.36,1808132.74,5,11.36,93735.84,21.81,46.21
+PAR009,Imobiliária Fictícia 09,DF,Pequeno,99,59,44,44.44,1799322.91,6,13.64,117665.06,25.03,50.96
+PAR011,Imobiliária Fictícia 11,SP,Médio,95,49,45,47.37,1786501.32,3,6.67,103796.54,23.48,49.36
+PAR025,Imobiliária Fictícia 25,PR,Médio,97,57,45,46.39,1762073.69,1,2.22,7094.4,22.84,49.23
+PAR001,Imobiliária Fictícia 01,RS,Médio,103,51,42,40.78,1719503.49,5,11.9,110076.73,21.22,46.62
+PAR017,Imobiliária Fictícia 17,PR,Pequeno,88,52,43,48.86,1702652.3,2,4.65,38972.68,20.88,44.45
+PAR021,Imobiliária Fictícia 21,SC,Pequeno,84,56,49,58.33,1698028.19,4,8.16,104275.89,23.87,48.61
+PAR003,Imobiliária Fictícia 03,MG,Médio,87,47,40,45.98,1694359.91,3,7.5,74090.86,24.86,50.65
+PAR013,Imobiliária Fictícia 13,GO,Grande,79,50,39,49.37,1558169.93,4,10.26,112492.98,24.43,50.93
+PAR019,Imobiliária Fictícia 19,DF,Grande,78,43,31,39.74,1305666.41,4,12.9,60633.67,26.14,52.74
