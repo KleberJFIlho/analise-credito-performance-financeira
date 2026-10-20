@@ -1,3 +1,12 @@
+## 🌐 Dashboard online
+
+[🚀 Acessar Atlas Credit — Dashboard Interativo](https://c8lka6o86egxm5woxtgm8j.streamlit.app/)
+
+Projeto educacional de análise de crédito e performance
+financeira desenvolvido com Python, SQL, SQLite e Streamlit.
+
+Todos os dados utilizados são fictícios.
+
 # Análise de Crédito e Performance Financeira
 
 **Projeto de portfólio | Python • SQL • SQLite • Streamlit (dashboard interativo) • Power BI (roteiro)**
